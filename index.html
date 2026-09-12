@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A special second anniversary surprise.">
+  <title>Our 2nd Anniversary ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="logo" href="#home">C <span>♥</span> Y</a>
+      <div class="nav-links">
+        <a href="#story">Our Story</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">My Letter</a>
+      </div>
+    </nav>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">SEPTEMBER 18 • TWO YEARS OF US</p>
+      <h1>Happy 2nd Anniversary,<br><span>My Love</span></h1>
+      <p class="hero-copy">Two years, countless memories, and one love I will always choose.</p>
+      <button class="primary-button" id="openSurprise">Open Your Surprise <span>♥</span></button>
+    </div>
+    <a class="scroll-cue" href="#story" aria-label="Scroll to our story">↓</a>
+  </header>
+
+  <main>
+    <section class="story section" id="story">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE PIECE OF OUR STORY</p>
+        <h2>730 days of choosing each other</h2>
+      </div>
+      <div class="stats reveal">
+        <article><strong id="dayCount">730</strong><span>Days together</span></article>
+        <article><strong>∞</strong><span>Beautiful memories</span></article>
+        <article><strong>1</strong><span>Love of my life</span></article>
+      </div>
+    </section>
+
+    <section class="memories section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY FAVORITE MEMORIES</p>
+        <h2>Every picture feels like home</h2>
+        <p>Click each photo to reveal a little message.</p>
+      </div>
+
+      <!-- PHOTO GUIDE: Put photo1.jpg, photo2.jpg, and photo3.jpg inside assets/images/ -->
+      <div class="photo-grid">
+        <button class="photo-card reveal" data-note="Every beginning is special, but ours will always be my favorite.">
+          <img src="images/40f71e6d-0f39-43d8-b518-b8f30d769fa0.jpg" data-fallback="assets/images/photo-placeholder.svg" alt="Our first anniversary">
+          <span><b>01</b> Where our story began</span>
+        </button>
+        <button class="photo-card featured reveal" data-note="With you, even an ordinary day becomes a memory worth keeping.">
+          <img src="images/8db9e223-c29f-423c-8787-555ae1b0f141.jpg" data-fallback="assets/images/photo-placeholder.svg" alt="A favorite moment together">
+          <span><b>02</b> My favorite kind of day</span>
+        </button>
+        <button class="photo-card reveal" data-note="Two years later, I still look at you and feel incredibly lucky.">
+          <img src="images/22575797-939c-4085-8a6e-e8b646475c17.jpg" data-fallback="assets/images/photo-placeholder.svg" alt="A recent memory together">
+          <span><b>03</b> Still choosing you</span>
+        </button>
+      </div>
+      <p class="photo-note" id="photoNote" aria-live="polite">Choose a memory above ❤️</p>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="envelope reveal" id="envelope">
+        <div class="envelope-top"></div>
+        <button id="openLetter" aria-expanded="false">Tap to open my letter 💌</button>
+        <article class="letter-paper">
+          <p class="script">To my favorite person,</p>
+          <p>Happy 2nd anniversary, my love! I can’t believe it has already been two years since we started our journey together. We’ve shared so many happy memories, laughter, problems, and little misunderstandings, but we always choose to stay and fix things together. Thank you for loving me, understanding me, and staying by my side even when I’m difficult to handle. I may not always be perfect or good at expressing my feelings, but please know that I truly love you and I’m very grateful to have you in my life.</p>
+          <p>You’re not only my girlfriend—you’re also my best friend, my comfort, and my safe place. I hope we can celebrate many more anniversaries and create more beautiful memories together. Whatever challenges come our way, I promise to keep choosing you, supporting you, and doing my best to become a better boyfriend. Thank you for making these two years so special. I’m so lucky to have you, and I love you more than words can explain. Happy 2nd anniversary, baby! Here’s to more years together and to our forever. ❤️</p>
+          <p class="signature">Forever yours,<br><span>Christian</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="promise section reveal">
+      <p class="eyebrow">MY SIMPLE PROMISE</p>
+      <h2>I will keep choosing you,<br><span>today and every day after.</span></h2>
+      <button class="heart-button" id="heartButton" aria-label="Send love">♥</button>
+      <p id="loveCounter">Tap the heart to send some love</p>
+    </section>
+  </main>
+
+  <footer>Made with all my love for our second anniversary • September 18 ❤️</footer>
+
+  <dialog id="surpriseDialog">
+    <button class="close" id="closeSurprise" aria-label="Close">×</button>
+    <div class="dialog-heart">♥</div>
+    <p class="script">You are my favorite chapter.</p>
+    <h2>And our story is only beginning.</h2>
+    <p>Happy second anniversary, baby. I love you!</p>
+    <button class="primary-button" id="continueButton">See our memories</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
